@@ -16,11 +16,6 @@ body{
     margin-right: 40px;
 }
 
-#logoText
-{
-    margin-top: -40px;
-}
-
 header
 {
     width: 100%;
@@ -31,13 +26,15 @@ header
     padding: 5px;
 }
 
-.logoArea
+.logo-area
 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#logo-junta{
+    width: 500px;
 }
 
 #iconText
