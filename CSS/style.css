@@ -2,15 +2,27 @@
     margin: 0;
     padding: 0;
 }
-
+:root{
+    --cor1: #69CEEB;
+    --cor2: #f5f5f5;
+    --cor3: #EAA68E;
+    --cor4: #EBB86A;
+    --cor5: #424242;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-main {
-    background-color: aqua;
+p{
+    text-align: justify;
 }
-
+main {
+    margin: -50px;
+    z-index: 1;
+    color: var(--cor5);
+}
+.row{
+    background-color: var(--cor2);
+}
 .logo {
     width: 100%;
     max-width: 250px;
@@ -23,16 +35,13 @@ main {
 
 header {
     width: 100%;
-    background-color: aliceblue;
+    background-color: var(--cor1);
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-}
-
-#iconText {
-    margin-top: -50px;
+    z-index: 10;
 }
 
 main {
@@ -45,9 +54,9 @@ h1 {
 
 nav {
     padding: 10px;
-    background-color: aquamarine;
+    background-color: var(--cor4);
 
-    border: 1px solid black;
+    border: 1px solid var(--cor5);
 }
 
 ol {
