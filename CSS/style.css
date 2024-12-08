@@ -168,3 +168,9 @@ a {
 .accordion-body > img{
     margin-right: 10px;
 }
+
+.comentario{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
