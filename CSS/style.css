@@ -24,7 +24,7 @@ main {
     background-color: var(--cor2);
 }
 .logo {
-    width: 100%;
+    width: calc(100% - 45px);
     max-width: 250px;
 }
 
@@ -52,7 +52,7 @@ h1 {
     border-bottom: 1px solid gray;
 }
 
-nav {
+.nav {
     padding: 10px;
     background-color: var(--cor4);
 
@@ -107,6 +107,15 @@ a {
     }
 }
 
+.menu{
+    display: none;
+}
+
+.menu > span{
+    font-size: 40px;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     aside {
         display: none;
@@ -122,4 +131,40 @@ a {
     #bandeiras{
         display: none;
     }
+    .menu{
+        display: flex;
+    }
+}
+
+#off-bandeiras{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.offcanvas-header{
+    background-color: var(--cor3);
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor4);
+}
+
+.off-esp{
+    border: 3px solid blue;
+}
+.off-br{
+    animation: diminuir 50ms linear forwards;
+}
+
+.off-br:hover{
+    animation: aumentar 50ms linear forwards;
+}
+
+.accordion-body > img{
+    margin-right: 10px;
 }

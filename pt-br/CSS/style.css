@@ -164,3 +164,7 @@ a {
 .off-esp:hover{
     animation: aumentar 50ms linear forwards;
 }
+
+.accordion-body > img{
+    margin-right: 10px;
+}
